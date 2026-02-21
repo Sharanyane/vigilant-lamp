@@ -2,6 +2,12 @@
 # Licensed under the GNU General Public License v3.0.  
 # See LICENSE file in the repository root for full license text.
 
+
+
+from app import keep_alive
+keep_alive()
+
+
 import asyncio
 from shared_client import start_client
 import importlib
@@ -39,3 +45,4 @@ if __name__ == "__main__":
             loop.close()
         except Exception:
             pass
+
